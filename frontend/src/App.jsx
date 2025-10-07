@@ -4,7 +4,7 @@ import { useState } from "react";
 function App() {
   const [notes, setNotes] = useState([]);
 
-  const baseUrl = "https://notes-app-api-ten-rho.vercel.app/notes"
+  const baseUrl = "https://notes-app-api-ten-rho.vercel.app"
 
   const fecthNotes = async () => {
     try {

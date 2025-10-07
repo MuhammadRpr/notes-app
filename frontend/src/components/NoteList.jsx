@@ -1,4 +1,4 @@
-
+import { NoteItem } from "./NoteItem.jsx";
 
 
 export const NoteList = ({ notes, onUpdate, onDelete }) => {

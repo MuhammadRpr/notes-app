@@ -72,7 +72,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen flex flex-col mt-24 items-center">
+      <main className="w-full h-full flex flex-col mt-24 items-center p-8">
         <NoteForm onAddNote={addNote} />
         <NoteList
           notes={notes}

@@ -14,7 +14,7 @@ export const NoteItem = ({ note, onDelete, onUpdate }) => {
     };
 
     return (
-        <div className="rounded-lg shadow-md bg-white w-[300px] p-5">
+        <div className="rounded-lg shadow-md bg-gray-50 w-[300px] p-5">
             {isEditing ? (
                 <>
                     <input
@@ -32,13 +32,13 @@ export const NoteItem = ({ note, onDelete, onUpdate }) => {
 
                     <div className="mt-4 flex gap-2">
                         <button
-                            className="bg-gray-500 text-white px-3 py-1 rounded"
+                            className="bg-white text-orange-500 border border-orange-500 rounded px-3 py-1 cursor-pointer"
                             onClick={handleCancel}
                         >
                             Cancel
                         </button>
                         <button
-                            className="bg-green-500 text-white px-3 py-1 rounded"
+                            className="bg-orange-500 text-white px-3 py-1 rounded cursor-pointer"
                             onClick={() => {
                                 onUpdate(note.id, titleEdit, contentEdit);
                                 setIsEditing(false);
@@ -57,13 +57,13 @@ export const NoteItem = ({ note, onDelete, onUpdate }) => {
                     <p className="mt-2">{note.content}</p>
                     <div className="mt-4 flex gap-2">
                         <button
-                            className="bg-yellow-500 text-white px-3 py-1 rounded"
+                            className="bg-orange-500 text-white px-3 py-1 rounded cursor-pointer"
                             onClick={() => setIsEditing(true)}
                         >
                             Edit
                         </button>
                         <button
-                            className="bg-red-500 text-white px-3 py-1 rounded"
+                            className="bg-white text-orange-500 px-3 py-1 rounded cursor-pointer border border-orange-500"
                             onClick={() => onDelete(note.id)}
                         >
                             Delete

@@ -3,7 +3,7 @@ import { NoteItem } from "./NoteItem.jsx";
 
 export const NoteList = ({ notes, onUpdate, onDelete }) => {
     return (
-        <section className="container py-8">
+        <section className="container py-8 md:flex-col justify-center items-center">
             <h2 className="inline-flex items-center gap-2 text-2xl font-medium mb-6">
                 <img src="/note.svg" alt="note icon" className="w-8 h-8" />
                 Notes
